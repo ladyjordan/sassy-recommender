@@ -17,7 +17,7 @@
 	  <span class="icon-bar"></span>
 	  <span class="icon-bar"></span>
   </button>
-  
+
 
   <div class="collapse navbar-collapse" id="navCollapse">
   
@@ -66,8 +66,16 @@
 
 	<h4> Mavericks </h4>
 	<button> Gallery </button>
+
+	<div id="pine"  onclick = "actionme()" > I change </div>
 	</div>
 
+	<script> document.write("Hello Javascript");
+	document.write(document.baseURI);
+	function actionme(){
+		document.getElementById('pine').innerHTML= Date();
+	}
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src = "js/bootstrap.js"> </script>
 	</body>
