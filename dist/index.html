@@ -15,6 +15,17 @@
 		padding: 20px;
 		width: 600px;
 	}
+	.c{
+		width:200px; 
+    height:200px; 
+		background: url('https://s-media-cache-ak0.pinimg.com/236x/7b/e9/1c/7be91c303269bf1c285c29ac2e905367.jpg');
+	}
+
+	.imageContainer {
+       width:200px; 
+       height:200px; 
+       background-image: url(https://s-media-cache-ak0.pinimg.com/236x/7b/e9/1c/7be91c303269bf1c285c29ac2e905367.jpg);
+ }
 	
 	</style>
 	</head>
@@ -102,7 +113,10 @@
 	<img src="http://files.shandymedia.com/styles/page/s3/images/photos/thefumble/dirk-nowitzki-fourth-oldest-40-points-1.png" height="100" width="200" alt= "Dirk Novitzki"
   onmouseover="showMessage(this)" onmouseleave="document.getElementById('msg').innerHTML= 'Hover over the image'">
 
-  <img src="games.jpg" id="draw" height="100" width="100">
+  <img src="games.jpg" id="draw" height="100" width="100"/> 
+	<div class="c"> Basketball</div>
+	<div class="imageContainer">
+	 The Golden State Warriors are an American professional basketball team based in Oakland, California. The Warriors compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Pacific Division.
 	</div>
 
 	<script> document.write("Hello Javascript");
@@ -121,10 +135,10 @@
 	}
 
 	function showMessage(element){
-		//document.getElementById('msg').innerHTML= element.alt;
+		document.getElementById('msg').innerHTML= element.alt;
     var link = document.getElementById('draw').innerHTML= element.src;
     document.getElementById('draw').src = link;
-    document.getElementById('msg').innerHTML = element.alt;
+    
 		console.log("Hovered over player image");
 	}
 
