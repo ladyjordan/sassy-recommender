@@ -20,7 +20,6 @@
 	}
 	body {
 		background-color: white  ;
-		font-color:red;
 	} 
 	p{
 		background-color:#CCD1D1;
@@ -42,29 +41,26 @@
 		width: 620px;
 		box-shadow:0px 1px 1px 0px;
 	}
-
 	.imageContainer {
        width:200px; 
        height:200px; 
        background-image: url(https://s-media-cache-ak0.pinimg.com/236x/7b/e9/1c/7be91c303269bf1c285c29ac2e905367.jpg);
  }
  .photo{
- 	display: inline;
- 	float: right;
-
+ }
+ .hoverchange{
+ 	display: inline-block;
+ }
+ .hoverchange:hover {
+ 	opacity:0.6!important;
  }
  .textbelow{
- 	text-align: justify;
-    width: 400;
-
+  width: 400px;
  }
-	
 	</style>
 	</head>
 	<body >
 	<!-- background="http://images.runemadsen.com/1440x/reynolds3-32246cdc8ba16694b120994e2b55549d.jpg" -->
-	
-	  
 
 	<div class ="navbar navbar-default navbar-fixed-top" style="box-shadow: 1px 1px 1px 1px #aaa; backgound-color:white;font-color: black">
 	<div class ="container-fluid">
@@ -107,13 +103,26 @@
 	<div class="container"> 
 	<div id="date" style="float:right; font-family:Helvetic; "></div>
 	<h1> National Basketball Association<small> pre-eminent men's professional basketball league</small></h1>
-	<div>
+	<div class= "container">
  
-  <div class="photo">
-	<img  src="https://s-media-cache-ak0.pinimg.com/originals/16/1a/8c/161a8cc10c947b25ffeb958d7be42a62.jpg" height="300" width="200"  style="box-shadow:2px 2px 2px 2px ;" onmouseover="showMessage(this)" alt="Kobe Bryant" onmouseleave="document.getElementById('msg').innerHTML='Hover over the images'" hspace="10">
-	<img src="https://sigroup.files.wordpress.com/2013/10/rose.jpg" height="300" width="200" style="box-shadow:2px 2px 2px 2px ;" onmouseover="showMessage(this)" alt="Derrick Rose" onmouseleave="document.getElementById('msg').innerHTML='Hover over the images'" hspace="10"><br>
+  <div class="photo" > 
+
+  <div class="hoverchange" >
+	<img  src="https://s-media-cache-ak0.pinimg.com/originals/16/1a/8c/161a8cc10c947b25ffeb958d7be42a62.jpg" height="300" width="200"  style="box-shadow:2px 2px 2px 2px ;" onmouseover="showMessage(this)" alt="Kobe Bryant" onmouseleave="document.getElementById('msg').innerHTML='Hover over the images'" hspace="10"/>
+	</div>
+
+	<div class="hoverchange">
+	<img src="https://sigroup.files.wordpress.com/2013/10/rose.jpg" height="300" width="200" style="box-shadow:2px 2px 2px 2px ;" onmouseover="showMessage(this)" alt="Derrick Rose" onmouseleave="document.getElementById('msg').innerHTML='Hover over the images'" hspace="10"/>
+	</div>
+
+
+	<div class="container">
 	<div class="textbelow" id ="msg" style="font-family:GuldScript; font-size:30px; float:center">Hover</div>
 	</div>
+
+	</div>
+	</div>
+	
 	<div class = "card" >
 	<h2>Golden State Warriors</h2>
 
@@ -159,10 +168,6 @@
 	
 
 	<br><br>
-
-	
-
-  
 	<div class="c"> Basketball</div>
 	<div class="imageContainer">
 	 The Golden State Warriors are an American professional basketball team based in Oakland, California. The Warriors compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Pacific Division.
