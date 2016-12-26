@@ -23,11 +23,15 @@
 	} 
 	p{
 		background-color:#CCD1D1;
-		padding: 20px;
+		padding: 40px;
 		width: 600px;
 		border-radius: 10px;
-		font-family: helvetica nueu;
+		font-family: sans-serif;
+		font-weight: ;
 		text-align: justify;
+	}
+	p:hover{
+    background-color: lightblue;
 	}
 	.c{
 		width:200px; 
@@ -57,12 +61,25 @@
  .textbelow{
   width: 400px;
  }
+ .parallax {
+    /* The image used */
+    background-image: url("http://images.runemadsen.com/1440x/reynolds3-32246cdc8ba16694b120994e2b55549d.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 	</style>
 	</head>
 	<body >
 	<!-- background="http://images.runemadsen.com/1440x/reynolds3-32246cdc8ba16694b120994e2b55549d.jpg" -->
 
-	<div class ="navbar navbar-default navbar-fixed-top" style="box-shadow: 1px 1px 1px 1px #aaa; backgound-color:white;font-color: black">
+	<div class ="navbar navbar-inverse navbar-fixed-top" style="box-shadow: 1px 1px 1px 1px #aaa; backgound-color:white;font-color: black">
 	<div class ="container-fluid">
 	<img src="http://www.logodesignlove.com/images/classic/nba-logo.jpg" height="50" width="55" style="float:left">
 
@@ -103,6 +120,8 @@
 	<div class="container"> 
 	<div id="date" style="float:right; font-family:Helvetic; "></div>
 	<h1> National Basketball Association<small> pre-eminent men's professional basketball league</small></h1>
+	
+	<div class="parallax"> </div>
 	<div class= "container">
  
   <div class="photo" > 
@@ -181,7 +200,7 @@
 	<br>
 	<br>
 	</div>
-	<script> document.write("Hello Javascript");
+	<script> 
 	document.write(document.baseURI);
 	function actionme(){
 		document.getElementById('pine').innerHTML= Date();
