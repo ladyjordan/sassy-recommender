@@ -48,6 +48,11 @@
  }
  .photo{
  	display: inline;
+ 	float: right;
+ }
+ .textbelow{
+ 	text-align: justify;
+    width: 400;
  }
 	
 	</style>
@@ -96,30 +101,46 @@
 	<div class="container"> 
 	<h1> National Basketball Association<small> pre-eminent men's professional basketball league</small></h1>
 	<div>
+ 
+  <div class="photo">
+	<img  src="https://s-media-cache-ak0.pinimg.com/originals/16/1a/8c/161a8cc10c947b25ffeb958d7be42a62.jpg" height="300" width="200" onmouseover="showMessage(this)" alt="Kobe Bryant" onmouseleave="document.getElementById('msg').innerHTML='Hover over the images'">
+	<img src="https://sigroup.files.wordpress.com/2013/10/rose.jpg" height="300" width="200"
+	onmouseover="showMessage(this)" alt="Derrick Rose" onmouseleave="document.getElementById('msg').innerHTML='Hover over the images'"><br>
+	<div class="textbelow" id ="msg" style="font-family:GuldScript; font-size:30px; float:center">Hover</div>
+	</div>
 	<div class = "card">
-	<h2>  Warriors </h2>
+	<h2>Golden State Warriors</h2>
 
 	<p> The Golden State Warriors are an American professional basketball team based in Oakland, California. The Warriors compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Pacific Division. The team was established in 1946 as the Philadelphia Warriors based in Philadelphia, Pennsylvania, a founding member of the Basketball Association of America (BAA). In 1962, the franchise relocated to the San Francisco Bay Area and was renamed the San Francisco Warriors. In 1971, the team changed its geographic moniker to Golden State, California's state nickname.[3][b] Since 1972, the team's home court has been the Oracle Arena in Oakland. The team is nicknamed the "Dubs."[4][5]
 	The Warriors have reached eight NBA Finals, winning four NBA championships in 1947,[c] 1956, 1975 and most recently in 2015 when they defeated the Cleveland Cavaliers. Golden State's four NBA championships are the fifth most in history behind only the Boston Celtics (17), Los Angeles Lakers (16), Chicago Bulls (6) and San Antonio Spurs (5). Wilt Chamberlain and Stephen Curry have both been named the NBA's Most Valuable Player while playing for the Warriors, for a total of three MVP awards. Golden State holds the NBA record for best regular season with 73–9 and most combined wins in a season (regular season and postseason) with 88 wins. </p>
 	<button type="button" class="btn btn-info">Gallery</button>
-
 	</div>
-	<img class="photo" src="https://s-media-cache-ak0.pinimg.com/originals/16/1a/8c/161a8cc10c947b25ffeb958d7be42a62.jpg" height="300" width="200" >
 
-	<h2> Celtics </h2>
+	<br>
+	
+	<div class = "card">
+	<h2>Boston Celtics</h2>
 	<p>The Boston Celtics (/ˈsɛltɪks/) are an American professional basketball team based in Boston, Massachusetts. The Celtics compete in the National Basketball Association (NBA) as a member club of the league's Eastern Conference Atlantic Division. Founded in 1946 and one of eight NBA teams (out of 23 total teams) to survive the league's first decade, the team is owned by Boston Basketball Partners LLC. The Celtics play their home games at the TD Garden, which they share with the National Hockey League (NHL)'s Boston Bruins. The franchise's 17 championships are the most of any NBA franchise, and account for 24.3 percent of all NBA championships since the league's founding in 1946.[2] As a percentage of championships won, the Celtics are the most successful franchise to date in the major four traditional North American professional sports leagues.[note 1]
 	The Celtics have played the Lakers a record 12 times in the Finals, including their most recent appearances in 2008 and 2010, where the Celtics have won nine meetings (but only two since 1980). Four Celtics players (Bob Cousy, Bill Russell, Dave Cowens and Larry Bird) have won the NBA Most Valuable Player Award for an NBA record total of 10 MVP awards.[3] Their mascot 'Lucky the Leprechaun' is a nod to the team's Irish heritage and to Boston's historically large Irish population.[4]
 	The Celtics rose again after struggling through the 1990s to win a championship in 2008 with the help of Kevin Garnett, Paul Pierce, and Ray Allen in what was known as the new "Big 3" era, following the original "Big 3" era of the 1980s that featured Larry Bird, Kevin McHale, and Robert Parish.
 	After the end of the Big 3, general manager Danny Ainge began a rebuilding process with the help of new head coach Brad Stevens, who led the Celtics to a return to the playoffs in 2015.</p>
-	<button> Gallery </button>
+	<button class="btn btn-info">   Gallery </button>
+	</div>
+	<br>
 
-	<h3> 76ers </h3>
+	<div class = "card">
+	<h2>Philadelphia 76ers</h2>
 	<p>The Philadelphia 76ers (also commonly known as the Sixers) are an American professional basketball team based in Philadelphia. The 76ers compete in the National Basketball Association (NBA) as a member club of the league's Eastern Conference Atlantic Division. Founded in 1946 and originally known as the Syracuse Nationals, they are one of the oldest franchises in the NBA, and one of only eight (out of 23) to survive the league's first decade.
 	The 76ers have had a rich history, with many of the greatest players in NBA history having played for the organization, including Wilt Chamberlain, Julius Erving, Moses Malone, Charles Barkley, Allen Iverson, and Billy Cunningham. They have won three NBA championships, with their first coming as the Syracuse Nationals in 1955. The second title came in the 1966–67 season, a team which was led by Chamberlain. The third title came in the 1982–83 season, won by a team led by Erving and Malone. The 76ers have only been back to the NBA Finals once since then: in 2001, when they lost to the Los Angeles Lakers 4 games to 1.</p>
-	<button> Gallery </button>
+	<button class="btn btn-info"> Gallery </button>
+	</div>
+	<br>
   
-	<h4> Mavericks </h4>
-	<button> Gallery </button>
+  <div class = "card">
+	<h2> Dallas Mavericks</h2>
+	<button class="btn btn-info"> Gallery </button>
+	</div>
+	<br>
 
 	<button onclick = "colorme()" class="btn btn-info" > Colorchanger </button>
 	 <p id="coloreffect"> Color is changed here </p> 
@@ -131,9 +152,9 @@
 
 	<img src = "game.jpg" onclick="console.log(this.alt)" height="200" width="200" alt="cool image">
 
-	<div id ="msg">Hover</div><br><br>
+	<br><br>
 
-	<img src= "https://i.ytimg.com/vi/oyKfi0P43BI/maxresdefault.jpg" onmouseover="showMessage(this)" alt="Allen Iverson" height="150" width="200" onmouseleave="document.getElementById('msg').innerHTML='Hover over the images'">
+	<img src= "https://i.ytimg.com/vi/oyKfi0P43BI/maxresdefault.jpg" >
 
   <img src="https://gmagazine.co/wp-content/uploads/2015/11/kobe-bryant-g-magazine-top-10-greatest-nba-players.jpg" height="150" width="200" alt= "Kobe Bryant"
   onmouseover="showMessage(this)" onmouseleave="document.getElementById('msg').innerHTML= 'Hover over the image'">
@@ -142,7 +163,7 @@
 	<img src="http://files.shandymedia.com/styles/page/s3/images/photos/thefumble/dirk-nowitzki-fourth-oldest-40-points-1.png" height="150" width="200" alt= "Dirk Novitzki"
   onmouseover="showMessage(this)" onmouseleave="document.getElementById('msg').innerHTML= 'Hover over the image'">
 
-  <img src="games.jpg" id="draw" height="150" width="200"/> 
+  
 	<div class="c"> Basketball</div>
 	<div class="imageContainer">
 	 The Golden State Warriors are an American professional basketball team based in Oakland, California. The Warriors compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Pacific Division.
