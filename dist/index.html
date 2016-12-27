@@ -19,7 +19,7 @@
 		text-align: center;
 	}
 	body {
-		background-color: white  ;
+		background-color: white;
 	} 
 	p{
 		background-color:#CCD1D1;
@@ -41,7 +41,7 @@
 	.card{
 		background-color:#ECEFF1;
 		padding: 20px;
-		border-radius: 10px;
+		border-radius: 5px;
 		width: 500px;
 		box-shadow:0px 1px 1px 0px;
 		display :inline-block;
@@ -92,6 +92,37 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.play {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
 }
 	</style>
 	</head>
@@ -214,11 +245,13 @@
 	<div class="imageContainer">
 	 The Golden State Warriors are an American professional basketball team based in Oakland, California. The Warriors compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Pacific Division.
 	</div>
+
+	<div class="play"></div>
 	<div>
-	<img src="facebook.png" height="50" width="50" style="float:right;">
-	<img src="g+.png" height="50" width="50" style="float:right; ">
-	<img src="twitter.png" height="50" width="50" style="float:right;">
-	<img src="youtube.png" height="50" width="50" style="float:right;">
+	<img src="images/facebook.png" height="50" width="50" style="float:right;">
+	<img src="images/g+.png" height="50" width="50" style="float:right; ">
+	<img src="images/twitter.png" height="50" width="50" style="float:right;">
+	<img src="images/youtube.png" height="50" width="50" style="float:right;">
 	</div>
 	<br>
 	<br>
