@@ -5,7 +5,11 @@
 	<head>
 	<title> Recommender </title>
 	<link href = "css/bootstrap.css" rel="stylesheet">
+
 	<style> 
+
+
+
 
 	@font-face{
 		font-family:"GuldScript";
@@ -20,7 +24,7 @@
 		text-align: center;
 	}
 	body {
-		background-color: #00CCCC  ;
+		background-color: white ;
 	} 
 	p{
 		background-color:#CCD1D1;
@@ -129,6 +133,8 @@
 
 
 	</style>
+
+	<script src="bower_components/shine/dist/shine.min.js"></script>
 	</head>
 	<body >
 	<!-- background="http://images.runemadsen.com/1440x/reynolds3-32246cdc8ba16694b120994e2b55549d.jpg" -->
@@ -180,7 +186,9 @@
 <br>
 	<div class="container" align="left"> 
 	<div id="date" style="float:right; font-family:Helvetic; "></div>
-	<h1> National Basketball Association<small> pre-eminent men's professional basketball league</small></h1>
+
+
+	<h1 id="demo"> National Basketball Association</h1><h1><small> pre-eminent men's professional basketball league</small></h1>
 	
 	<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
 	<rect height="50" width="80"/>
@@ -216,7 +224,7 @@
 	</div>
 	
 	<div class = "card" >
-	<h2>Golden State Warriors</h2>
+	<h2 >Golden State Warriors</h2>
 	<p> The Golden State Warriors are an American professional basketball team based in Oakland, California. The Warriors compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Pacific Division. The team was established in 1946 as the Philadelphia Warriors based in Philadelphia, Pennsylvania, a founding member of the Basketball Association of America (BAA). In 1962, the franchise relocated to the San Francisco Bay Area and was renamed the San Francisco Warriors. In 1971, the team changed its geographic moniker to Golden State, California's state nickname.[3][b] Since 1972, the team's home court has been the Oracle Arena in Oakland. The team is nicknamed the "Dubs."[4][5]
 	The Warriors have reached eight NBA Finals, winning four NBA championships in 1947,[c] 1956, 1975 and most recently in 2015 when they defeated the Cleveland Cavaliers. Golden State's four NBA championships are the fifth most in history behind only the Boston Celtics (17), Los Angeles Lakers (16), Chicago Bulls (6) and San Antonio Spurs (5). Wilt Chamberlain and Stephen Curry have both been named the NBA's Most Valuable Player while playing for the Warriors, for a total of three MVP awards. Golden State holds the NBA record for best regular season with 73–9 and most combined wins in a season (regular season and postseason) with 88 wins. </p>
 	<button type="button" class="btn btn-info">Gallery</button>
@@ -276,6 +284,12 @@
 	<br>
 	<br>
 	</div>
+
+
+	<h1 id="demo">Shine.js</h1>
+
+  
+
 	<script> 
 	document.write(document.baseURI);
 	function actionme(){
@@ -302,8 +316,26 @@
 		document.getElementById('date').innerHTML= Date("dd mmm yyyy");
 
 
+    var config = new shinejs.Config({
+      numSteps: 8,
+      opacity: .5,
+      shadowRGB: new shinejs.Color(0, 0, 0)
+    });
+
+    var shine = new shinejs.Shine(document.getElementById('demo'), config);
+
+    function handleMouseMove(event) {
+      shine.light.position.x = event.clientX;
+      shine.light.position.y = event.clientY;
+      shine.draw();
+    }
+
+    window.addEventListener('mousemove', handleMouseMove, false);
+	
 	</script>
+	<script src="bower_components/shine/dist/shine.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src = "js/bootstrap.js"> </script>
+	
 	</body>
 	</html>
