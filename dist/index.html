@@ -320,6 +320,8 @@
     var config = new shinejs.Config({
       numSteps: 8,
       opacity: .5,
+      offsetPow: 1.8,
+      blur: 4,
       shadowRGB: new shinejs.Color(0, 0, 0)
     });
     
@@ -329,6 +331,7 @@
     //create new shine.js instance for every DOM element that is to be shined
     var shine1 = new shinejs.Shine(document.getElementById('shinethis'), config);
     // function to change light position dynamically
+
     function handleMouseMove(event) {
       shine.light.position.x = event.clientX;
       shine.light.position.y = event.clientY;
