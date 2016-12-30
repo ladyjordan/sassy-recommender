@@ -188,7 +188,7 @@
 	<div id="date" style="float:right; font-family:Helvetic; "></div>
 
 
-	<h1 id="demo"> National Basketball Association</h1><h1><small> pre-eminent men's professional basketball league</small></h1>
+	<h1 id="shineheadings"> National Basketball Association</h1><h1><small> pre-eminent men's professional basketball league</small></h1>
 	
 	<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
 	<rect height="50" width="80"/>
@@ -286,7 +286,7 @@
 	</div>
 
 
-	<h1 id="demo">Shine.js</h1>
+	<h1 id="shinethis">Shine.js</h1>
 
   
 
@@ -316,21 +316,26 @@
 		document.getElementById('date').innerHTML= Date("dd mmm yyyy");
 
 
+		//additional configuration parameters with which we can design the look of the shadows
     var config = new shinejs.Config({
       numSteps: 8,
       opacity: .5,
       shadowRGB: new shinejs.Color(0, 0, 0)
     });
+    
 
-    var shine = new shinejs.Shine(document.getElementById('demo'), config);
-
+    //shine instance for the shineheadings id, pass config in constructor
+    var shine = new shinejs.Shine(document.getElementById('shineheadings'), config);
+    // function to change light position dynamically
     function handleMouseMove(event) {
       shine.light.position.x = event.clientX;
       shine.light.position.y = event.clientY;
       shine.draw();
     }
-
+    //Eventlistener that fires this function on event(mousemove)
     window.addEventListener('mousemove', handleMouseMove, false);
+
+
 	
 	</script>
 	<script src="bower_components/shine/dist/shine.min.js"></script>
