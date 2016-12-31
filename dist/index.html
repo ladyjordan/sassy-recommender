@@ -135,6 +135,14 @@
 	</style>
 
 	<script src="bower_components/shine/dist/shine.min.js"></script>
+	<script src="bower_components/bootstrap-year-calender/js/bootstrap-year-calender.min.js"></script>
+	<script src="bower_components/bootstrap-year-calender/css/bootstrap-year-calender.min.csfs"></script>
+
+	<link href="Datedropper/datedropper.css" rel="stylesheet" type="text/css" />
+<!-- jQuery lib -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- dateDropper lib -->
+<script src="Datedropper/datedropper.js"></script>
 	</head>
 	<body >
 	<!-- background="http://images.runemadsen.com/1440x/reynolds3-32246cdc8ba16694b120994e2b55549d.jpg" -->
@@ -198,6 +206,8 @@
 	<rect height="5" width="60" x="10" y="60"/>
 	</svg>
 
+<input type="text" style="float:right;background-color: white;padding: 10px;font-family:calibri;"/>
+<br><br>
 
 		<div class="parallax"> </div><br>
 
@@ -275,6 +285,9 @@
 	 The Golden State Warriors are an American professional basketball team based in Oakland, California. The Warriors compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Pacific Division.
 	</div>
 
+
+
+
 	<div class="play"></div>
 	<div>
 	<img src="images/facebook.png" height="50" width="50" style="float:right;">
@@ -288,7 +301,9 @@
 
 
 	<!--<h1 id="shinethis">Shine.js</h1>  -->
-
+<script>
+$('input').dateDropper();
+</script>
   
 
 	<script> 
@@ -326,7 +341,6 @@
       shadowRGB: new shinejs.Color(0, 0, 0)
     });
     
-
     //shine instance for the shineheadings id, pass config in constructor
     var shine = new shinejs.Shine(document.getElementById('shineheadings'), config);
     //create new shine.js instance for every DOM element that is to be shined
@@ -347,7 +361,6 @@
     //Eventlistener that fires this function on event(mousemove)
     window.addEventListener('mousemove', handleMouseMove, false);
      window.addEventListener('mousemove', handleMouseMove1, false);
-
 
 	
 	</script>
